@@ -47,8 +47,8 @@ public class SpotTheDot extends MainActivity { // dlaczego tak jest że najprost
             @Override
             public void onClick(View v) {
 
-                Timer T = new Timer(); // nie wiem czy to najbardziej wyrafinowana metoda implementacji pomiaru czasu... ale działa ^^
-                T.scheduleAtFixedRate(new TimerTask() {
+                Timer Clockster = new Timer(); // nie wiem czy to najbardziej wyrafinowana metoda implementacji pomiaru czasu... ale działa ^^
+                Clockster.scheduleAtFixedRate(new TimerTask() {
                     @Override
                     public void run() {
                         runOnUiThread(new Runnable() {
@@ -66,7 +66,7 @@ public class SpotTheDot extends MainActivity { // dlaczego tak jest że najprost
                     TextView text1 = findViewById(R.id.textView);
                     text1.setText(Integer.toString(licznik + 1) + " rounds left");
                 } else {
-                    T.cancel();
+                    Clockster.cancel();
                     time /= 1000;
                     time /= 20;
                     Toast.makeText(SpotTheDot.this,

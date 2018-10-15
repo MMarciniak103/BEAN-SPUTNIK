@@ -10,9 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class MainActivity extends AppCompatActivity {
+
 
     /// Majkel
     public static final String SHARED_PREFS="sharedPrefs";
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_QUIZ=1;
     private TextView textViewHighscore;
     private int highscore;
-
 
 
     /// SYROP
@@ -49,20 +49,21 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+     setContentView(R.layout.activity_main);
 
-        //// Majkel
-        textViewHighscore=findViewById(R.id.text_view_highscore);
-        loadHighscore();
+            //// Majkel
+            textViewHighscore = findViewById(R.id.text_view_highscore);
+            loadHighscore();
 
-        Button buttonStartQuiz=findViewById(R.id.button_start_quiz);
-        buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startQuiz();
-            }
-        });
-        // wyłączyłem te listenery bo z nich nie korzystam /// SYROP
+            Button buttonStartQuiz = findViewById(R.id.button_start_quiz);
+            buttonStartQuiz.setOnClickListener(new View.OnClickListener() {
+                                                   @Override
+                                                   public void onClick(View v) {
+                                                       startQuiz();
+                                                   }
+                                               });
+
+            // wyłączyłem te listenery bo z nich nie korzystam /// SYROP
         /*
         Button buttonDaltonTest=findViewById(R.id.button_start_daltonTest);
         buttonDaltonTest.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
         });
         */
 
-    }
+        }
+
 
     // Majkel
     private void startQuiz() {
