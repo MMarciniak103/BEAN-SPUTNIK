@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BEAN-SPUTNIK</string>
+
+    <string name="aboutBean">"Zajmujemy się zastosowaniem informatyki i elektroniki w medycynie,"
+        "a członkami koła są głównie studenci inżynierii biomedycznej.\n\nChętnie podejmujemy"
+        "współpracę ze studentami innych kierunków. W ramach działania naszego"
+        "koła poszerzamy swoją wiedzę o nowych technologiach w medycynie, a także tworzymy własne"
+        "projekty, które są atrakcyjne i interaktywne, łącząc w ten sposób oba kręgi naszych"
+        "naukowych zainteresowań."
+    </string>
+
+    <string name="creators">
+        "App created by S.Y.R.O.P. and Majkel for KN BEAN promotion"
+    </string>
+
+    <string name="action_settings">Settings</string>
+</resources>

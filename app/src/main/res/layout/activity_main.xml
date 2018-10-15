@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:id="@+id/button0"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@drawable/splash"
+        android:onClick="beanWeb"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDaltonism"
+        android:layout_width="172dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/fasola2"
+        android:onClick="daltonizmTest1"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="DALTONISM TEST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonDot"
+        android:layout_width="172dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/fasola1"
+        android:onClick="spotTheDot"
+        android:text="SPOT THE DOT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDaltonism" />
+
+    <Button
+        android:id="@+id/button_start_quiz"
+        android:layout_width="172dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/fasola2"
+        android:onClick="startQuiz"
+        android:text="QUIZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDot" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="172dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/fasola1"
+        android:onClick="about"
+        android:text="ABOUT BEAN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_quiz" />
+
+
+    <!---->
+    <TextView
+        android:id="@+id/text_view_highscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Highscore: 0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAbout"
+        app:layout_constraintStart_toEndOf="@+id/button_start_quiz"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDot" />
+
+
+</android.support.constraint.ConstraintLayout>
