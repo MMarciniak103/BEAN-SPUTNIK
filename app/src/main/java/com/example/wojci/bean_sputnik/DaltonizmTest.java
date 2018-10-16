@@ -203,11 +203,11 @@ public class DaltonizmTest extends AppCompatActivity {
                 finish();
                 break;
         }
-        if(score>score1) {
+        if(plateIndex<25){if(score>score1) {
             Toast.makeText(this, "Odpowiedź poprawna", Toast.LENGTH_SHORT).show();
         } else{
             Toast.makeText(this, "Falsch", Toast.LENGTH_SHORT).show();
-        }
+        }}
     }
 
 
