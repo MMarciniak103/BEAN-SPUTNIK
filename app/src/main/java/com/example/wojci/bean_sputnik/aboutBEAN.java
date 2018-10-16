@@ -1,7 +1,9 @@
 package com.example.wojci.bean_sputnik;
 
 import android.os.Bundle;
-public class aboutBEAN extends MainActivity {
+import android.support.v7.app.AppCompatActivity;
+
+public class aboutBEAN extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

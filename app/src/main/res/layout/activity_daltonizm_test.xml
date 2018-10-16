@@ -1,17 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
     android:fitsSystemWindows="true"
-    tools:context=".DaltonizmTest">
+    tools:context=".DaltonizmTest"
+    android:background="@color/background">
 
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageViewTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/plate1" />
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonC"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="nic"-->
+        <!--app:layout_anchor="@+id/imageViewTest"-->
+        <!--app:layout_anchorGravity="bottom|center" />-->
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:text="nic"
+        app:layout_anchor="@+id/imageViewTest"
+        app:layout_anchorGravity="right|bottom" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:text="12"
+        app:layout_anchor="@+id/imageViewTest"
+        app:layout_anchorGravity="left|bottom" />
+
+    <TextView
+        android:id="@+id/textViewPytanie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/under_construction" />
+        android:paddingBottom="50dp"
+        android:text="Co widzisz?"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_anchor="@+id/imageViewTest"
+        app:layout_anchorGravity="top|center" />
+
+    <TextView
+        android:id="@+id/textViewPlateIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:paddingBottom="25dp"
+        android:text="1/24"
+        app:layout_anchor="@+id/textViewPytanie"
+        app:layout_anchorGravity="top|center" />
+
+
+
 </android.support.design.widget.CoordinatorLayout>

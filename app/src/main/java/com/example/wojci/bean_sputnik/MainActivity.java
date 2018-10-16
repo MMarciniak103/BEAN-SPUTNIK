@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     protected void daltonizmTest1(View view){
 
         Intent intentDalton= new Intent(getApplicationContext(), DaltonizmTest.class);
-        startActivity(intentDalton);
+        startActivityForResult(intentDalton, 1);
     }
 
     protected void spotTheDot(View view){
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
             //// Majkel
             textViewHighscore = findViewById(R.id.text_view_highscore);
@@ -63,13 +63,17 @@ public class MainActivity extends AppCompatActivity {
                                                    }
                                                });
 
+            //SYROP
+
             // wyłączyłem te listenery bo z nich nie korzystam /// SYROP
-        /*
+        ////// JEDNAK TE LISTENERY TO DOBRA RZECZ XXXXD
+        /// przydają się przy robieniu paczki .apk  // SYROP
+
         Button buttonDaltonTest=findViewById(R.id.button_start_daltonTest);
         buttonDaltonTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Soon",Toast.LENGTH_SHORT).show();
+                daltonizmTest1(v);
             }
         });
 
@@ -77,10 +81,25 @@ public class MainActivity extends AppCompatActivity {
         buttonSpotDot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Soon",Toast.LENGTH_SHORT).show();
+                spotTheDot(v);
             }
         });
-        */
+
+        Button buttonAbout=findViewById(R.id.buttonAbout);
+        buttonAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                about(v);
+            }
+        });
+
+        Button buttonWeb=findViewById(R.id.buttonWeb);
+        buttonWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                beanWeb(v);
+            }
+        });
 
         }
 

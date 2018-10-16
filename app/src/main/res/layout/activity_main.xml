@@ -7,26 +7,25 @@
     android:background="@color/background"
     >
 
-    <ImageView
-        android:id="@+id/button0"
+    <Button
+        android:id="@+id/buttonWeb"
         android:layout_width="0dp"
         android:layout_height="120dp"
         android:background="@drawable/splash"
         android:onClick="beanWeb"
-        android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/buttonDaltonism"
+        android:id="@+id/button_start_daltonTest"
         android:layout_width="172dp"
         android:layout_height="115dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="100dp"
         android:background="@drawable/fasola2"
-        android:onClick="daltonizmTest1"
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:text="DALTONISM TEST"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +34,7 @@
 
 
     <Button
-        android:id="@+id/buttonDot"
+        android:id="@+id/button_start_spotDot"
         android:layout_width="172dp"
         android:layout_height="115dp"
         android:layout_marginStart="100dp"
@@ -46,7 +45,7 @@
         android:text="SPOT THE DOT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDaltonism" />
+        app:layout_constraintTop_toBottomOf="@+id/button_start_daltonTest" />
 
     <Button
         android:id="@+id/button_start_quiz"
@@ -60,7 +59,7 @@
         android:text="QUIZ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDot" />
+        app:layout_constraintTop_toBottomOf="@+id/button_start_spotDot" />
 
     <Button
         android:id="@+id/buttonAbout"
@@ -70,7 +69,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/fasola1"
-        android:onClick="about"
         android:text="ABOUT BEAN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +87,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonAbout"
         app:layout_constraintStart_toEndOf="@+id/button_start_quiz"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDot" />
+        app:layout_constraintTop_toBottomOf="@+id/button_start_spotDot" />
 
 
 </android.support.constraint.ConstraintLayout>
