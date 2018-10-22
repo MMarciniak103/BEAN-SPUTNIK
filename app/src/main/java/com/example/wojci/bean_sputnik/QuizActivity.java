@@ -66,13 +66,13 @@ public class QuizActivity extends AppCompatActivity {
 //            beanm.beanquiz.QuizDb quizDb=new beanm.beanquiz.QuizDb(this);
             com.example.wojci.bean_sputnik.QuizDb quizDb=new com.example.wojci.bean_sputnik.QuizDb(this); //podmianka ścieżki // SYROP
             questionList=quizDb.getAllQuestions();
-            questionCountTotal=questionList.size();
+            questionCountTotal=20;
             Collections.shuffle(questionList);
 
             showNextQuestion();
         }else{
             questionList=savedInstanceState.getParcelableArrayList(KEY_QUESTION_LIST);
-            questionCountTotal=questionList.size();
+            questionCountTotal=20;
             questionCounter=savedInstanceState.getInt(KEY_QUESTION_COUNT);
             currentQuestion=questionList.get(questionCounter-1);
             score=savedInstanceState.getInt(KEY_SCORE);
@@ -100,8 +100,11 @@ public class QuizActivity extends AppCompatActivity {
 
     private void showNextQuestion(){
         rb1.setTextColor(textColorDefaultRb);
+        rb1.setClickable(true);
         rb2.setTextColor(textColorDefaultRb);
+        rb2.setClickable(true);
         rb3.setTextColor(textColorDefaultRb);
+        rb3.setClickable(true);
         rbGroup.clearCheck();
 
         if(questionCounter<questionCountTotal){
@@ -124,6 +127,9 @@ public class QuizActivity extends AppCompatActivity {
     private void checkAnswer(){
         answered=true;
         RadioButton rbSelected=findViewById(rbGroup.getCheckedRadioButtonId());
+        rb1.setClickable(false);
+        rb2.setClickable(false);
+        rb3.setClickable(false);
         int answerNr=rbGroup.indexOfChild(rbSelected)+1;
 
         if(answerNr==currentQuestion.getAnswerNr()){

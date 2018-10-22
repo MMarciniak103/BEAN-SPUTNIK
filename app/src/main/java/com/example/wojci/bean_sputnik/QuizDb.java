@@ -17,7 +17,7 @@ import com.example.wojci.bean_sputnik.QuizTableSchema.*; // podmianka ściezki /
 public class QuizDb extends SQLiteOpenHelper {
 
     private static final String DB_NAME="BeanQuiz.db";
-    private static final int DB_VERSION=2;
+    private static final int DB_VERSION=3;
 
     private SQLiteDatabase db;
 
@@ -172,51 +172,86 @@ public class QuizDb extends SQLiteOpenHelper {
                 "40-50% ciężaru ciała osobnika dorosłego",
                 "55-40% ciężaru ciała osobnika dorosłego", 2);
         addQuestion(q36);
-        Question q37 = new Question("Jaka kara pozbawienia wolności grozi za jazdę w stanie nietrzeźwości?",
-                "kara pozbawienia wolności do 2 lat",
-                "kara pozbawienia wolności do 1 roku",
-                "do więzienia idzie się tylko w przypadku spowodowania kolizji lub wypadku", 1);
+        Question q37 = new Question("Pompa sodowo - potasowa należy do transportu:",
+                "aktywnego",
+                "biernego",
+                "wspomaganego", 1);
         addQuestion(q37);
-        Question q38 = new Question("Stan po użyciu alkoholu zaczyna się od:",
-                "od 0,1 mg/l w wydychanym powietrzu",
-                "od 0,2 promila alkoholu we krwi",
-                "odpowiedzi a i b są prawidłowe", 3);
+        Question q38 = new Question("Który z gruczołów odpowiedzialny jest za wydzielanie dopaminy ?",
+                "kora nadnerczy",
+                "tarczyca",
+                "podwzgórze", 3);
         addQuestion(q38);
-        Question q39 = new Question("Ile kosztuje pobyt we WrOPON (Izba Wytrzeźwień ul. Sokolnicza we Wrocławiu):",
-                "99,98 zł",
-                "199,98 zł",
-                "299,98 zł", 3);
+        Question q39 = new Question("Przykładem stawu typu zawiasowego jest :",
+                "staw barkowy",
+                "staw biodrowy",
+                "staw łokciowy", 3);
         addQuestion(q39);
-        Question q40 = new Question("Alkoholizm to:",
-                "picie alkoholu",
-                "choroba alkoholowa, uzależnienie od alkoholu",
-                "utrata kontroli nad ilością spożywanego alkoholu", 2);
+        Question q40 = new Question("Prawo opisujące  pochłanianie promieniowania elektromagnetycznego przy przechodzeniu przez częściowo absorbujący i rozpraszający ośrodek nazywamy :",
+                "Prawo Kotielnikowa-Shannona",
+                "Prawo Lamberta-Beera",
+                "Prawo Biota - Savarta", 2);
         addQuestion(q40);
-        Question q41 = new Question("Dopuszczalna zawartość alkoholu we krwi w Austrii, Chorwacji, Belgii, Danii, Francji, Grecji to",
-                "tak jak w Polsce - 0,2 promila",
-                "0,1 promila",
-                "0,5 promila", 3);
+        Question q41 = new Question("Za pomocą której metody z technik tomograficznych nie można zobrazować kości u dorosłego człowieka ?",
+                "Tomografia Komputerowa",
+                "Rezonans magnetyczny",
+                "USG", 3);
         addQuestion(q41);
-        Question q42 = new Question("Jakie są inne konsekwencje prawne związane z prowadzeniem pojazdu w stanie nietrzeźwości:",
-                "odpowiedzi b i c są poprawne",
-                "zatrzymanie prawa jazdy",
-                "10 punktów karnych", 1);
+        Question q42 = new Question("Koncepcja szczelin czasowych jest standardowo wykorzystywana w interfejsie:",
+                "TWI",
+                "1-wire",
+                "SPI", 2);
         addQuestion(q42);
-        Question q43 = new Question("Za spożywanie alkoholu w miejscach objętych zakazem grozi mandat karny w wysokości:",
-                "100 zł",
-                "200 zł",
-                "50 zł", 1);
+        Question q43 = new Question("Czym jest laparoskopia ?",
+                "wziernikowanie jamy otrzewnej",
+                "wziernikowanie pęcherza moczowego za  pomocą cystoskopu",
+                "wziernikowanie narządu słuchowego", 1);
         addQuestion(q43);
-        Question q44 = new Question("Poczęstowanie alkoholem 17-latka to przestępstwo za które grozi:",
-                "tylko kara grzywny",
-                "więzienie do 2 lat",
-                "można dostać tylko wyrok w zawieszeniu", 2);
+        Question q44 = new Question("Czym jest bronchoskopia ?",
+                "badanie endoskopowe przewodu pokarmowego",
+                "badanie endoskopowe układu wydalniczego",
+                "badanie endoskopowe dróg oddechowych", 3);
         addQuestion(q44);
-        Question q45 = new Question("Leczenie odwykowe osób uzależnionych od alkoholu jest:",
-                "dobrowolne",
-                "przymusowe, kieruje sąd",
-                "przymusowe, kieruje lekarz orzecznik", 1);
+        Question q45 = new Question("Jak nazywa się badanie umożliwiające pomiar objętości mózgu",
+                "SPECT",
+                "Wolumetria MRI",
+                "PET", 2);
         addQuestion(q45);
+        Question q46 = new Question("Powstanie wiązki laserowej w laserze wymaga :",
+                "Inwersji obsadzeń, emisji spontanicznej",
+                "emisji wymuszonej, inwersji obsadzeń",
+                "emisji spontanicznej", 2);
+        addQuestion(q46);
+        Question q47 = new Question("Który z czynników nie ma pozytywnych skutków przy regeneracji kości po złamaniu?",
+                "Utrzymanie odpowiedniego obciążenia kości",
+                "Prawidłowe odżywianie (bogate w witaminę D, żelazo i wapń)",
+                "Zupełne unieruchomienie", 3);
+        addQuestion(q47);
+        Question q48 = new Question("Jaki związek chemiczny jest potrzebny do prawidłowego przyswajania żelaza przez organizm?",
+                "Kwas askorbinowy",
+                "Filochinon",
+                "Octan izoamylu", 1);
+        addQuestion(q48);
+        Question q49 = new Question("Tyfus plamisty europejski to bakteryjna choroba zakaźna przenoszona przez:",
+                "Wszy ludzkie ",
+                "Drogą oralno-fekalną",
+                "Drogą kropelkową", 1);
+        addQuestion(q49);
+        Question q50 = new Question("W Chorobie Parkinsona za objawy odpowiedzialny jest:",
+                "Obrzęk mózgu",
+                "Zanik komórek dopaminergicznych",
+                "Dysfunkcja komórek rdzenia kręgowego", 2);
+        addQuestion(q50);
+        Question q51 = new Question("Jaki związek jest transportowany przez transferynę?",
+                "Magnez",
+                "Wapń",
+                "Żelazo", 3);
+        addQuestion(q51);
+        Question q52 = new Question("Jak nazywa się urządzenie do badania pojemności płuc",
+                "Bronchometr",
+                "Spirometr",
+                "Stetoskop", 2);
+        addQuestion(q52);
     }
 
     //dodawanie pytan do bazy danych
