@@ -2,6 +2,7 @@
 package com.example.wojci.bean_sputnik; //musiałem zmienić nazwę pakietu żeby to pasowało do mojej paczki // SYROP
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -50,7 +51,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_layout);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);  /// line added by SYROP
         textViewQuestion=findViewById(R.id.text_view_question);
         textViewScore=findViewById(R.id.text_view_score);
         textViewQuestionCount=findViewById(R.id.text_view_question_count);

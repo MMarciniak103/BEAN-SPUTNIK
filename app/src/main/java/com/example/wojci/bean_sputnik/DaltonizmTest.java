@@ -1,5 +1,6 @@
 package com.example.wojci.bean_sputnik;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -215,6 +216,7 @@ public class DaltonizmTest extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daltonizm_test);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Button Switchpic1 = findViewById(R.id.buttonA);
         Button Switchpic2 = findViewById(R.id.buttonB);
         Switchpic1.setOnClickListener(new View.OnClickListener() {

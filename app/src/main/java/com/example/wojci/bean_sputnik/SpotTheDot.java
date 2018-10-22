@@ -1,5 +1,6 @@
 package com.example.wojci.bean_sputnik;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -31,6 +32,7 @@ public class SpotTheDot extends AppCompatActivity { // dlaczego tak jest że naj
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dots);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         text1 = findViewById(R.id.textView);
         display = getWindowManager().getDefaultDisplay();
         display.getSize(size);  //tu chyba z grubsza wiadomo co się dzieje
@@ -38,7 +40,7 @@ public class SpotTheDot extends AppCompatActivity { // dlaczego tak jest że naj
         height = size.y;
 
         redButton = findViewById(R.id.buttonRed);
-        text1.setText("This is a simple reaction time measuring program.\nBegin by pressing the red dot");
+        text1.setText("This is a simple reaction time measuring program.\nBegin by pressing the bean");
         //wiem że instrukcja powinna być nieco lepiej napisana, nie mam pomysłu jak
 
         redButton.setX(width / 2-30); //początkowa pozycja kropy
